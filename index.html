@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bob's Appliances</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./spacing.css" />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel/docs/assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel/docs/assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body id="home">
+    <!--topBtn-->
+    <button
+      onclick="topFunction()"
+      id="topBtn"
+      class="animate fade-in animate-5s"
+      title="Go to top"
+    >
+      <div class="topBtn-container">
+        <span id="topBtn-arrow" class="material-icons">expand_less</span>
+        <p class="m-0">Top</p>
+      </div>
+    </button>
+    <!--navbar-->
+    <nav class="navbar navbar-default navbar-static-top m-0">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand pt-3" href="./index.html">
+            <img
+              class="img-responsive padding-bottom-xl"
+              src="./images/logo-nav-bobs-appliances.png"
+              alt="Bob's Appliances logo"
+            />
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="#contact-us">About Us</a></li>
+            <li><a href="#financing">Financing</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#contact-us">Store Info</a></li>
+            <li>
+              <a href="#"
+                >Cart
+                <span
+                  class="glyphicon glyphicon-shopping-cart ps-3"
+                  aria-hidden="true"
+                ></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!--main-->
+    <div id="page-content-wrap" class="container-fluid">
+      <div class="row">
+        <!--hero welcome-->
+        <section
+          id="front-page"
+          class="container-fluid section-margin text-center"
+        >
+          <img
+            class="hero"
+            src="./images/kitchenaid-hero.png"
+            alt="KitchenAid Appliance Suite"
+          />
+          <div class="selling-points">
+            <div class="row">
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4">
+                <img
+                  id="bob-logo"
+                  class="img-responsive img-rounded mb-3 animate fade-in-down animate-05s"
+                  src="./images/logo-full-bobs-appliances.png"
+                  alt="Bob's Appliances Logo"
+                />
+              </div>
+              <div class="col-sm-4"></div>
+            </div>
+            <div class="animate fade-in animate-1s">
+              <h2>UPGRADE YOUR KITCHEN</h2>
+              <h3>
+                Shop our collection of products from
+                <img
+                  class="kitchenaid-logo m-3"
+                  src="./images/KTA-inline.png"
+                />
+              </h3>
+              <a
+                class="btn btn-primary btn-lg my-5"
+                href="#"
+                title="View Products"
+                >View Products</a
+              >
+            </div>
+          </div>
+        </section>
+        <!--shop by category-->
+        <section id="shop-category" class="boxed-container section-margin">
+          <div class="section-header-banner-bg">
+            <div class="section-header-banner">
+              <p class="section-header">Shop by Category</p>
+            </div>
+          </div>
+          <div class="featured-boxes mt-5 pt-5">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-6">
+                <a class="featured-box-wrap" href="#" title="Cooking Category">
+                  <img
+                    class="img-responsive"
+                    src="./images/cooking-category.png"
+                    alt="Oven"
+                    title="Cooking Category"
+                  />
+                  <div class="caption">Shop Now</div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6">
+                <a
+                  class="featured-box-wrap"
+                  href="#"
+                  title="Refrigeration Category"
+                >
+                  <img
+                    class="img-responsive"
+                    src="./images/refrigeration-category.png"
+                    alt="Refrigerator"
+                    title="Refrigeration Category"
+                  />
+                  <div class="caption">Shop Now</div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6">
+                <a class="featured-box-wrap" href="#" title="Laundry Category">
+                  <img
+                    class="img-responsive"
+                    src="./images/laundry-category.png"
+                    alt="Dryer"
+                    title="Laundry Category"
+                  />
+                  <div class="caption">Shop Now</div>
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6">
+                <a
+                  class="featured-box-07 featured-box-wrap"
+                  href="#"
+                  title="Grilling Category"
+                >
+                  <img
+                    class="img-responsive"
+                    src="./images/grilling-category.png"
+                    alt="Barbaque Grill"
+                    title="Grilling Category"
+                  />
+                  <div class="caption">Shop Now</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--parallax divider-->
+        <div class="container-fluid plx-1 visible-lg"></div>
+        <!--financing options-->
+        <section id="financing" class="container-fluid section-margin">
+          <div class="row mb-5">
+            <div class="col-xs-12">
+              <a href="#" title="Synchrony Financing"
+                ><img
+                  class="img-responsive"
+                  src="./images/synchrony-banner.png"
+                  alt="synchrony financing"
+              /></a>
+            </div>
+          </div>
+          <div class="row boxed-container pt-5">
+            <div class="col-sm-4 financing-text">
+              <h2>
+                BENEFITS OF THE<br />
+                SYNCHRONY HOME™ <br />
+                CREDIT CARD
+              </h2>
+            </div>
+            <div class="col-sm-4">
+              <ul class="financing-text">
+                <li>
+                  6 Months Promotional Financing on purchases of $299 or
+                  more<sup>1</sup>
+                </li>
+                <li>
+                  12 to 60 Months Promotional Financing on qualifying purchases
+                  at select Synchrony HOME locations<sup>1</sup>
+                </li>
+                <li>Online account management and customer service</li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <ul class="financing-text">
+                <li>
+                  A dedicated credit limit for home purchases from furniture and
+                  décor to appliances and more, with buying power to help you
+                  get what you want and need for your home*
+                </li>
+                <li>
+                  No annual fee<sup>2</sup> and the ability to request a credit
+                  limit increase<sup>3</sup>
+                </li>
+                <li>$0 fraud liability and 24/7 secure account management</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <img
+              class="img-responsive center-block"
+              src="./images/card-image.png"
+              alt="synchrony card"
+            />
+          </div>
+          <div class="row mb-5">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <small>
+                *Subject to credit approval.<br />
+
+                <sup>1</sup>Subject to credit approval. Minimum monthly payments
+                required. Promotional financing offers available at the time of
+                purchase may vary by location. See store for details.<br />
+
+                <sup>2</sup>For new accounts: Purchase APR is 29.99%; Minimum
+                Interest Charge is $2. Existing cardholders should see their
+                cardholder agreements for their applicable terms.<br />
+
+                <sup>3</sup>You may be required to provide your annual net
+                income if we do not have your recent information on file.
+              </small>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </section>
+        <!--parallax divider-->
+        <div class="container-fluid plx-2 visible-lg"></div>
+        <!--services-->
+        <section class="boxed-container section-margin">
+          <div class="section-header-banner-bg">
+            <div class="section-header-banner">
+              <p class="section-header">Services</p>
+            </div>
+          </div>
+          <div class="row featured-cards">
+            <div class="col-sm-4 col-xs-12">
+              <div class="featured-card-wrap">
+                <div class="card-img">
+                  <span class="material-icons md-lg">local_shipping</span>
+                </div>
+                <div class="card-caption">
+                  <p class="caption-title">White Glove Delivery</p>
+                  <p class="caption-desc">
+                    We Offer an Extensive Range Of Services Tailored To You. Are
+                    You Looking For a White Glove Service? You've Come To the
+                    Right Place.
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a class="btn btn-primary" href="#" title="Delivery"
+                    >More Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <div class="featured-card-wrap">
+                <div class="card-img">
+                  <span class="material-icons md-lg">paid</span>
+                </div>
+                <div class="card-caption">
+                  <p class="caption-title">Rebate Center</p>
+                  <p class="caption-desc">
+                    Looking for rebates in your area? Search and track over one
+                    million eligible online items both Residential and
+                    Commercial at Bob's Appliances Rebate Center.
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a class="btn btn-primary" href="#" title="Rebate Center"
+                    >More Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <div class="featured-card-03 featured-card-wrap">
+                <div class="card-img">
+                  <span class="material-icons md-lg">handyman</span>
+                </div>
+                <div class="card-caption">
+                  <p class="caption-title">Service & Repair</p>
+                  <p class="caption-desc">
+                    Bob's Home Services provides all types of major and small
+                    appliance repairs. Our repair services include
+                    refrigeration, stove top equipment and more.
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a class="btn btn-primary" href="#" title="Service & Repair"
+                    >More Info</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--featured brands-->
+        <section
+          id="featured-brands"
+          class="container-fluid text-center section-margin"
+        >
+          <div class="row my-5">
+            <div class="col-sm-12">
+              <div class="featured-brand-container owl-carousel owl-theme">
+                <div class="item"><img src="./images/AMN.png" /></div>
+                <div class="item"><img src="./images/ELECTROLUX.png" /></div>
+                <div class="item"><img src="./images/FRIG.png" /></div>
+                <div class="item"><img src="./images/KTA.png" /></div>
+                <div class="item"><img src="./images/MAY.png" /></div>
+                <div class="item"><img src="./images/whirl.png" /></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--contact hours location-->
+        <section id="contact-us" class="boxed-container section-margin">
+          <div class="row">
+            <div id="contact-text" class="col-sm-6 col-lg-3">
+              <h2 class="section-header sub-section-title mt-2">CONTACT US</h2>
+              <p class="lead sub-section-title">Bob's Appliances</p>
+              602 N Sixty Duece Blvd<br />
+              Phoenix, AZ 85051<br />
+              <br />
+              (602) 456-7890<br />
+              <br />
+              <a href="#">Contact Us</a><br />
+              <a href="#">My Account</a><br />
+              <a href="#">Financing</a><br />
+              <a href="#">Privacy Policy</a><br />
+              <a href="#">Terms of Service</a><br />
+              <a href="#">Site Map</a><br />
+              <br />
+              <p class="lead sub-section-title">STAY CONNECTED</p>
+              <div id="stay-connected" class="row mb-5">
+                <div class="col-xs-2 col-xs-offset-3 col-sm-1 col-sm-offset-0">
+                  <a href="#" class="fa fa-facebook"></a>
+                </div>
+                <div class="col-xs-2 col-sm-1">
+                  <a href="#" class="fa fa-yelp"></a>
+                </div>
+                <div class="col-xs-2 col-sm-1">
+                  <a href="#" class="fa fa-instagram"></a>
+                </div>
+                <div class="col-xs-3 col-sm-9"></div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-5">
+              <table class="table">
+                <thead class="thead">
+                  <th class="section-header sub-section-title">Hours</th>
+                  <th></th>
+                </thead>
+                <tbody>
+                  <tr class="lead">
+                    <td>Monday</td>
+                    <td class="text-right">9:00 - 5:00pm</td>
+                  </tr>
+                  <tr class="lead">
+                    <td>Tuesday</td>
+                    <td class="text-right">9:00 - 5:00pm</td>
+                  </tr>
+                  <tr class="lead">
+                    <td>Wednesday</td>
+                    <td class="text-right">9:00 - 5:00pm</td>
+                  </tr>
+                  <tr class="lead">
+                    <td>Thursday</td>
+                    <td class="text-right">9:00 - 5:00pm</td>
+                  </tr>
+                  <tr class="lead">
+                    <td>Friday</td>
+                    <td class="text-right">9:00 - 5:00pm</td>
+                  </tr>
+                  <tr class="lead">
+                    <td>Saturday</td>
+                    <td class="text-right">CLOSED</td>
+                  </tr>
+                  <tr class="lead">
+                    <td>Sunday</td>
+                    <td class="text-right">CLOSED</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="google-map" class="col-sm-12 col-lg-4 center-block">
+              <!--Google map-->
+              <div class="map-responsive mx-5">
+                <iframe
+                  src="https://maps.google.com/maps?q=9445%20N%20Metro%20Pkwy%20E,%20Phoenix,%20AZ%2085051&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+              <!--Google Maps-->
+            </div>
+          </div>
+          <hr />
+        </section>
+      </div>
+    </div>
+    <!--/main /page-content-wrap-->
+    <footer class="footer">
+      <div class="container">
+        <p class="text-center">© 2022 Bob's Appliances All Rights Reserved</p>
+      </div>
+    </footer>
+    <!--owl script-->
+    <script src="./OwlCarousel/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+    <!--topBtn script-->
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("topBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
